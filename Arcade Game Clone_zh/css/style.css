@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+}
+
+#super:target{
+  opacity:1;
+  pointer-events: auto;
+}
+#super{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  pointer-events: none;
+}
+.inner-modal {
+  width: 480px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.close {
+  top: -10px;
+  right: -12px;
+  position: absolute;
+  line-height: 25px;
+  background-color: 8CD4E3;
+  color: #fff;
+  text-align: center;
+  width: 24px;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px #000;
+}
